@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Catamaran:900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Monsieur+La+Doulaise&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lovers+Quarrel&display=swap');
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+.landing{
+	background: url(../images/bg3.jpg);
+	top:0;
+	background-position: center center;
+    background-repeat: no-repeat;
+	background-size:cover;
+}
+#particles-js{
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.75);
+ 
+}
+
+#content{
+  /*background-color: #f00;*/
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+
+}
+.Hello-World h1{
+	font-family: 'Raleway', sans-serif;
+	color: #F9F3F4;
+
+	text-shadow: 0px 0px 300px #000;
+	font-size: 250%;
+	color: white;
+}
+.Hello-World h2{
+	font-family: 'Catamaran', sans-serif;
+	color: #F9F3F4;
+
+	text-shadow: 0px 0px 300px #000;
+	font-size: 150%;
+	color: white;
+}
