@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css?family=Catamaran:900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Monsieur+La+Doulaise&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lovers+Quarrel&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Exo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 html, body {
 	margin: 0;
@@ -11,11 +14,15 @@ html, body {
 	width: 100%;
 }
 .landing{
+	height: 100%;
+	width: 100%;
+	margin: auto;
 	background: url(../images/bg3.jpg);
+	display: table;
 	top:0;
 	background-position: center center;
     background-repeat: no-repeat;
-	background-size:cover;
+	background-size: cover;
 }
 #particles-js{
 	height: 100%;
@@ -36,8 +43,10 @@ html, body {
 
 }
 .Hello-World h1{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Exo', comic-sans;
 	color: #F9F3F4;
+	/*text-decoration-style: dotted; */
+	/*text-decoration: underline overline dotted;*/
 
 	text-shadow: 0px 0px 300px #000;
 	font-size: 250%;
@@ -46,8 +55,159 @@ html, body {
 .Hello-World h2{
 	font-family: 'Catamaran', sans-serif;
 	color: #F9F3F4;
-
+	padding-left: 22%;
 	text-shadow: 0px 0px 300px #000;
-	font-size: 150%;
+	font-size: 80%;
 	color: white;
+}
+.btn {
+	border-radius: 9px;
+	font-family: 'Oswald', sans-serif;
+	color: #036A81;
+	font-size: 85%;
+	padding: 10px 20px;
+	border: solid #036A81 3px;
+}
+.btn:hover{
+	color: #fff;
+	border: solid #fff 9px;
+}
+.gradient-button {
+    margin: 10px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 1.5s;
+    background-size: 200% auto;
+    color: #FFF;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 25px;
+}
+/*.gradient-button:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin: 8px 10px 12px;
+}*/
+.gradient-button-1 {background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%)}
+.gradient-button-1:hover { background-position: right center; }
+
+.heading{
+	padding-top: 10%;
+}
+.heading h1{
+	font-family: "Oswald";
+	font-size: 300%;
+	padding-left: 1%;
+	border-left: 6px solid #E3872D;
+}
+
+.summary {
+	margin-left: 50%;
+	width: 58%;
+}
+.beauty {
+	float: left;
+	margin-top: 10%;
+}
+.summary #brag{
+	font-size: 170%;
+}
+.about_short_contact_wrap ul {
+    -moz-column-count: 2;
+    -moz-column-gap: 15px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 15px;
+    column-count: 2;
+    column-gap: 15px;
+    list-style-type: none;
+    
+}
+.about_short_contact_wrap li {
+
+}
+
+.about_short_contact_wrap ul li label {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 13px;
+    color: #000;
+    min-width: 85px;
+    display: inline-block;
+}
+.about_short_contact_wrap a {
+ color: black;
+ -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+  text-decoration: none;
+}
+.about_short_contact_wrap a:hover {
+ color: red;
+}
+
+.buttons_wrap{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.buttons_wrap ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.buttons_wrap ul li{
+	margin: 0px 30px 10px 0px;
+	float: left;
+}
+.buttons_wrap ul li:last-child{margin-right: 0px;}
+.buttons_wrap ul li a span{
+	position: relative;
+	z-index: 2;
+}
+.buttons_wrap ul li a{
+	text-decoration: none;
+    color: #fff;
+    background-color: #E3872D;
+    font-weight: 600;
+    font-family: "Montserrat";
+    padding: 12px 35px;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;;
+}
+.buttons_wrap ul li a:before{
+	position: absolute;
+    content: "";
+    top: 0px;
+    height: 100%;
+    left: -25%;
+    width: 0%;
+    background-color: #041230;
+    transform: skew(50deg);
+    transition-duration: .6s;
+    z-index: 1;
+}
+.buttons_wrap ul li a:hover:before{width: 180%;}
+
+@media screen and (max-width: 768px){
+	.summary{
+		float:left;
+	}
+	.beauty{
+		display: none;
+	}
 }
