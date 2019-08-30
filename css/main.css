@@ -60,6 +60,13 @@ html, body {
 	font-size: 80%;
 	color: white;
 }
+.Hello-World a{
+	text-decoration: none;
+}
+.Hello-World a:hover{
+	text-decoration: none;
+	color: #F9F3F4;
+}
 .btn {
 	border-radius: 9px;
 	font-family: 'Oswald', sans-serif;
@@ -97,7 +104,9 @@ html, body {
 }*/
 .gradient-button-1 {background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%)}
 .gradient-button-1:hover { background-position: right center; }
-
+.info {
+	padding-bottom: 10%;
+}
 .heading{
 	padding-top: 10%;
 }
@@ -203,11 +212,6 @@ html, body {
 }
 .buttons_wrap ul li a:hover:before{width: 180%;}
 
-@media screen and (max-width: 768px){
-	.summary{
-		float:left;
-	}
-	.beauty{
-		display: none;
-	}
+.projects{
+	background-color: #CBCBCB;
 }
