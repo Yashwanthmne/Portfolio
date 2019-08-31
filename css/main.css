@@ -235,6 +235,8 @@ html, body {
 
 
 .skills{
+	height: 100%;
+	width: 100%;
 	background-color: #F6F7FD;
 }
 .skills h1{
@@ -244,13 +246,30 @@ html, body {
 	border-left: 6px solid #E3872D;
 }
 .heading-skills{
-	padding-top: 10%;
+	padding-top: 5%;
 	margin-left: 10%;
 }
 
 .skills-left{
 	float: left;
 	width: 40%;
+}
+
+.skill-measure span.label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #000;
+    font-family: "Montserrat";
+}
+.skill-measure span.number{
+
+    float: right;
+    font-size: 13px;
+    color: #000;
+    font-weight: 700;
+    font-family: "Montserrat";
+
+
 }
 .progress span.label {
     font-size: 13px;
@@ -260,5 +279,6 @@ html, body {
 }
 
 .skills-right{
+	margin-top: 5%;
 	margin-left: 50%;
 }
