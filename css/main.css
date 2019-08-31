@@ -14,9 +14,11 @@ html, body {
 	width: 100%;
 }
 .landing{
+	position: relative;
 	height: 100%;
 	width: 100%;
 	margin: auto;
+	background-color: blue;
 	background: url(../images/bg3.jpg);
 	display: table;
 	top:0;
@@ -24,9 +26,16 @@ html, body {
     background-repeat: no-repeat;
 	background-size: cover;
 }
+
+.landing #wrapper{
+	background-color: blue;
+	background-size: cover;
+}
 #particles-js{
+	position: absolute;
 	height: 100%;
 	width: 100%;
+	/*z-index: -1;*/
 	background-color: rgba(0,0,0,0.75);
  
 }
@@ -35,6 +44,7 @@ html, body {
   /*background-color: #f00;*/
   margin: 0;
   position: absolute;
+  z-index: 1;
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
@@ -98,6 +108,7 @@ html, body {
     display: inline-block;
     border-radius: 25px;
 }
+
 .gradient-button-1 {background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%)}
 .gradient-button-1:hover { background-position: right center; }
 .info {
@@ -147,13 +158,13 @@ html, body {
     display: inline-block;
 }
 .about_short_contact_wrap a {
- color: black;
- -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition:.5s;
-  text-decoration: none;
+	color: black;
+  	-o-transition:.5s;
+	-ms-transition:.5s;
+ 	-moz-transition:.5s;
+ 	-webkit-transition:.5s;
+ 	transition:.5s;
+ 	text-decoration: none;
 }
 .about_short_contact_wrap a:hover {
  color: red;
@@ -208,6 +219,31 @@ html, body {
 }
 .buttons_wrap ul li a:hover:before{width: 180%;}
 
-.projects{
+@media only screen and (max-width: 762px) {
+  #particles-js{
+    display: none;
+  }
+
+  .beauty {
+    display: none;
+  }
+  .summary{
+  	margin-right: 50%;
+  	margin-left: 0%:;
+  }
+}
+
+
+.skills{
 	background-color: #CBCBCB;
+}
+.skills h1{
+	font-family: "Oswald";
+	font-size: 300%;
+	padding-left: 1%;
+	border-left: 6px solid #E3872D;
+}
+.heading-skills{
+	padding-top: 10%;
+	margin-left: 10%;
 }
