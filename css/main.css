@@ -219,7 +219,7 @@ html, body {
 }
 .buttons_wrap ul li a:hover:before{width: 180%;}
 
-@media only screen and (min-width: 762px) {
+@media only screen and (max-width: 768px) {
  /* #particles-js{
     display: none;
   }
@@ -251,6 +251,12 @@ html, body {
 .skills-left{
 	float: left;
 	width: 40%;
+}
+.progress span.label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #000;
+    font-family: "Montserrat";
 }
 
 .skills-right{
